@@ -1,6 +1,7 @@
 #include<iostream>
 
-int main() {
+int main() 
+{
     int number_of_games;
     char person_won;
     int anton_wins = 0;
@@ -17,14 +18,11 @@ int main() {
     }
     if (anton_wins == danik_wins) {
         std::cout<<"Friendship";
+    } else if (anton_wins > danik_wins) {
+        std::cout<<"Anton";
     } else {
-        if (anton_wins > danik_wins) {
-            std::cout<<"Anton";
-        } else {
-            std::cout<<"Danik";
-        }
+        std::cout<<"Danik";
     }
 
     return 0;
-
 }
